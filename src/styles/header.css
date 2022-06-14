@@ -1,0 +1,27 @@
+.head {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/images/help.jpg");
+  width: 100vw;
+  min-height: 600px;
+}
+.head__title {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+}
+
+.intro {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50px;
+  top: 50px;
+}
+.intro__logo {
+  width: 100px;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  position: absolute;
+  right: 40px;
+}
+.nav--top {
+  top: 40px;
+}
+.nav--bottom {
+  bottom: 60px;
+}/*# sourceMappingURL=nav.css.map */

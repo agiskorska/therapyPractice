@@ -1,0 +1,11 @@
+.nav{
+    display: flex;
+    position: absolute;
+    right: 40px;
+    &--top{
+        top: 40px;
+    }
+    &--bottom{
+        bottom:60px;
+    }
+}
