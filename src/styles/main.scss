@@ -1,5 +1,6 @@
-@import './header.scss';
-@import './nav.scss';
+@import './_header.scss';
+@import './_nav.scss';
+@import './button';
 body{
     box-sizing: 0;
     margin: 0;
@@ -13,3 +14,63 @@ li{
     display: inline;
 }
 
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-space{
+    justify-content: space-around;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.align-end{
+    align-items: flex-end;
+}
+
+.fl-bas-10{
+    flex-basis: 10%;
+}
+
+.fl-bas-20{
+    flex-basis: 20%;
+}
+
+.fl-bas-30{
+    flex-basis: 30%;
+}
+
+.fl-bas-40{
+    flex-basis: 40%;
+}
+
+.fl-bas-50{
+    flex-basis: 50%;
+}
+
+.fl-bas-60{
+    flex-basis: 60%;
+}
+
+.fl-bas-70{
+    flex-basis: 70%;
+}
+
+.fl-bas-80{
+    flex-basis: 80%;
+}
+
+.fl-bas-90{
+    flex-basis: 90%;
+}
+
+.fl-bas-100{
+    flex-basis: 100%;
+}

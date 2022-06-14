@@ -1,0 +1,22 @@
+@import './settings.scss';
+
+.nav{
+    display: flex;
+    position: relative;
+    width: 100%;
+    z-index: 5;
+    font-size: $medium;
+
+    &--bottom{
+        position: sticky;
+    }
+
+    &__list--top{
+        text-transform: lowercase;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+}

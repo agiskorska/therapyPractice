@@ -1,0 +1,18 @@
+@import './settings.scss';
+.button{
+    font-size: $medium;
+    position: absolute;
+    z-index: 5;
+    bottom: 100px;
+    left: 8%;
+    border-radius: 50px;
+    &__head{
+        border: $buttonColor solid 3px;
+        padding: 5px 15px;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+}
