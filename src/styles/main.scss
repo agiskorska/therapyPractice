@@ -1,6 +1,13 @@
 @import './_header.scss';
 @import './_nav.scss';
 @import './button';
+@import './about';
+h1,h2,h3{
+    font-family: $impact;
+}
+p{
+    font-family: $content;
+}
 body{
     box-sizing: 0;
     margin: 0;
@@ -18,7 +25,10 @@ li{
     display: flex;
     flex-direction: row;
 }
-
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
 .justify-center{
     justify-content: center;
 }
@@ -73,4 +83,12 @@ li{
 
 .fl-bas-100{
     flex-basis: 100%;
+}
+
+.container{
+    width: 60%;
+}
+
+.header{
+    font-size: $xlarge;
 }
