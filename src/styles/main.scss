@@ -1,9 +1,12 @@
 @import './_header.scss';
 @import './_nav.scss';
-@import './button';
-@import './about';
+@import './_button';
+@import './_about';
+@import './_therapy';
+
 h1,h2,h3{
     font-family: $impact;
+    margin: 0;
 }
 p{
     font-family: $content;

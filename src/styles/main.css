@@ -78,38 +78,98 @@
 /* Colors */
 .button {
   font-size: 26px;
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+.button__head {
   position: absolute;
   z-index: 5;
   bottom: 100px;
   left: 8%;
-  border-radius: 50px;
-}
-.button__head {
   border: #EFBB7E solid 3px;
-  padding: 5px 15px;
 }
 .button__head:hover {
   transform: scale(1.1);
 }
+.button__therapy {
+  color: #464646;
+  margin-left: 8.3%;
+  background-color: #EFBB7E;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 
 .about {
+  text-align: justify;
   position: relative;
 }
 .about__content {
   font-size: 26px;
 }
-.about::after {
+.about__content--highlight {
+  position: relative;
+  padding-bottom: 10%;
+}
+.about__content--highlight::after {
   position: absolute;
   content: "";
-  width: 100%;
-  height: 40%;
-  background-color: rgba(239, 186, 126, 0.5058823529);
-  bottom: 0;
-  z-index: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: #EFBB7E;
+  top: 0;
+  left: -35%;
+  z-index: -1;
+}
+
+.quote {
+  background-color: white;
+  padding: 10px;
+  width: 40%;
+}
+
+/* Fonts */
+/* Font Sizes */
+/* Colors */
+.therapy {
+  position: relative;
+}
+.therapy__header {
+  padding-left: 8.3%;
+}
+.therapy__photo {
+  position: absolute;
+  top: -10%;
+  right: 8.3%;
+  width: 25%;
+  z-index: 3;
+  background-color: #87575C;
+  min-height: 60vh;
+}
+.therapy__photo img {
+  padding: 10% 20%;
+  width: 60%;
+}
+.therapy__content {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 26px;
+  padding-left: 8.3%;
+  width: 41.2%;
+}
+.therapy__article {
+  margin: 0 8.3%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.therapy__article > * {
+  flex-basis: 40%;
+  padding: 5%;
 }
 
 h1, h2, h3 {
   font-family: "Oswald";
+  margin: 0;
 }
 
 p {

@@ -1,15 +1,29 @@
 .about{
+    text-align: justify;
     position: relative;
     &__content{
+        // padding: 20px;
         font-size: $medium;
+        &--highlight{
+            position: relative;
+            padding-bottom: 10%;
+        }
+        &--highlight::after{
+            position: absolute;
+            content: "";
+            width: 100vw;
+            height: 100%;
+            background-color: $highlight1;
+            top: 0;
+            left: -35%;
+            z-index:-1;
+        }
     }
-    &::after{
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 40%;
-        background-color: $highlight1;
-        bottom: 0;
-        z-index:0;
-    }
+}
+
+.quote{
+    background-color: white;
+    padding: 10px;
+    width: 40%;
+    
 }

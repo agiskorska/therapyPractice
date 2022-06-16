@@ -1,0 +1,41 @@
+@import '../styles/settings.scss';
+.therapy{
+    position: relative;
+    &__header{
+        padding-left: 8.3%;
+    }
+
+    &__photo{
+        position: absolute;
+        top: -10%;
+        right: 8.3%;
+        width: 25%;
+        z-index: 3;
+        background-color: $photoBack;
+        min-height: 60vh;
+        
+        img{
+            padding: 10% 20%;
+            width: 60%;
+        }
+    }
+
+    &__content{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: $medium;
+        padding-left: 8.3%;
+        width: 41.2%;
+    }
+
+    &__article{
+        margin: 0 8.3%;
+        display: flex;
+        flex-wrap: wrap;
+        &>*{
+            flex-basis: 40%;
+            padding: 5%;
+        }
+    }
+
+}
