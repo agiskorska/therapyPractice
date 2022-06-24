@@ -1,8 +1,8 @@
+@import './settings.scss';
 .about{
     text-align: justify;
     position: relative;
     &__content{
-        // padding: 20px;
         font-size: $medium;
         &--highlight{
             position: relative;
@@ -25,5 +25,4 @@
     background-color: white;
     padding: 10px;
     width: 40%;
-    
 }

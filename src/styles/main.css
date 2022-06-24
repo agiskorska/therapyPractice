@@ -1,6 +1,81 @@
 /* Fonts */
 /* Font Sizes */
 /* Colors */
+.about {
+  text-align: justify;
+  position: relative;
+}
+.about__content {
+  font-size: 26px;
+}
+.about__content--highlight {
+  position: relative;
+  padding-bottom: 10%;
+}
+.about__content--highlight::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 100%;
+  background-color: #EFBB7E;
+  top: 0;
+  left: -35%;
+  z-index: -1;
+}
+
+.quote {
+  background-color: white;
+  padding: 10px;
+  width: 40%;
+}
+
+/* Fonts */
+/* Font Sizes */
+/* Colors */
+.button {
+  font-size: 26px;
+  border-radius: 50px;
+  padding: 5px 15px;
+  font-family: "Oswald";
+}
+.button__head {
+  position: absolute;
+  z-index: 5;
+  bottom: 100px;
+  left: 8%;
+  border: #EFBB7E solid 3px;
+}
+.button__head:hover {
+  transform: scale(1.1);
+}
+.button__therapy {
+  color: #464646;
+  margin-left: 8.3%;
+  background-color: #EFBB7E;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.button__therapy--middle {
+  position: absolute;
+  bottom: -5%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.button__therapy--middle::after {
+  content: "";
+  width: 100vw;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateX(-50%);
+  background-color: blue;
+}
+
+/* Fonts */
+/* Font Sizes */
+/* Colors */
 .head {
   position: relative;
   width: 100%;
@@ -73,66 +148,35 @@
   align-items: flex-start;
 }
 
+.offer {
+  padding-top: 100px;
+}
+.offer__post {
+  margin: 5% 16.6%;
+}
+
 /* Fonts */
 /* Font Sizes */
 /* Colors */
-.button {
-  font-size: 26px;
-  border-radius: 50px;
-  padding: 5px 15px;
-  font-family: "Oswald";
+.post {
+  display: flex;
 }
-.button__head {
-  position: absolute;
-  z-index: 5;
-  bottom: 100px;
-  left: 8%;
-  border: #EFBB7E solid 3px;
+.post__content {
+  width: 60%;
+  margin: 20px;
+  font-size: 16px;
 }
-.button__head:hover {
-  transform: scale(1.1);
+.post__picture {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 40%;
+  height: 300px;
+  overflow: hidden;
 }
-.button__therapy {
-  color: #464646;
-  margin-left: 8.3%;
-  background-color: #EFBB7E;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.button__therapy--middle {
-  position: absolute;
-  bottom: -5%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-}
-
-.about {
-  text-align: justify;
-  position: relative;
-}
-.about__content {
-  font-size: 26px;
-}
-.about__content--highlight {
-  position: relative;
-  padding-bottom: 10%;
-}
-.about__content--highlight::after {
-  position: absolute;
-  content: "";
-  width: 100vw;
-  height: 100%;
-  background-color: #EFBB7E;
-  top: 0;
-  left: -35%;
-  z-index: -1;
-}
-
-.quote {
-  background-color: white;
-  padding: 10px;
-  width: 40%;
+.post__img {
+  width: 100%;
 }
 
 /* Fonts */
@@ -188,10 +232,6 @@ body {
   margin: 0;
 }
 
-img {
-  width: 30%;
-}
-
 li {
   list-style: none;
   display: inline;
@@ -200,6 +240,11 @@ li {
 .flex-row {
   display: flex;
   flex-direction: row;
+}
+
+.flex-row-rev {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .flex-col {
